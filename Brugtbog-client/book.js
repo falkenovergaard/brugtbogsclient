@@ -24,7 +24,6 @@ $(document).ready(function () {
                 "<td>" + book.edition + "</td>" +
                 "<td>" + book.isbn + "</td>" +
                 "</tr>");
-
         });
 
         $(".customerDetails").click(function (evt) {

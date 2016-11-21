@@ -19,7 +19,6 @@ $(document).ready(function () {
                 transferIsChosen=1;
             }
 
-
             //Create JSON object
             var user = {
                 username: $("#newUsername").val(),
@@ -33,12 +32,12 @@ $(document).ready(function () {
                 transfer: transferIsChosen
             };
 
-            SDK.User.create(function(err, data) {
+            SDK.User.create(user, function(err, data) {
                 if (err) throw err;
 
                 console.log(user.username);
 
-                window.location.href="BookOverview";
+                window.location.href="index.html";
 
         });
 

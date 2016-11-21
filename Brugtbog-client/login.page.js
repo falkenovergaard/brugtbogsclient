@@ -21,11 +21,10 @@ $(document).ready(function () {
             alert("succesfull login")
                 $("#loginForm").find(".form-group").addClass("has-success");
 
-            if(type ==1) {
+            if(data.type == 1) {
                 window.location.href = "admin.html";
-            }
-                else{
-                window.location.href = "user.html"
+            } else{
+                window.location.href = "user.html";
             }
 
 
